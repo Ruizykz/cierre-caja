@@ -1,0 +1,142 @@
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: #171521;
+  border-right: 1px solid #302b3d;
+  flex-shrink: 0;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 8px 30px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background-color: #7138c8;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.sidebar-brand h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.sidebar-brand p {
+  margin: 4px 0 0;
+  color: #9b96aa;
+  font-size: 12px;
+}
+
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-heading {
+  padding: 0 10px;
+  margin: 8px 0 12px;
+  color: #827c94;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sidebar-link {
+  width: 100%;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: #bcb7c9;
+  text-align: left;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: #262135;
+  color: #ffffff;
+}
+
+.sidebar-link.active {
+  background-color: #35234f;
+  border-color: #55358a;
+  color: #c9a5ff;
+}
+
+.sidebar-icon {
+  width: 22px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sidebar-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: auto;
+  padding: 18px 8px 5px;
+  color: #9b96aa;
+  font-size: 11px;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #35c98a;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 16px;
+    border-right: none;
+    border-bottom: 1px solid #302b3d;
+  }
+
+  .sidebar-brand {
+    padding-bottom: 18px;
+  }
+
+  .sidebar-navigation {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: 8px;
+  }
+
+  .sidebar-heading {
+    display: none;
+  }
+
+  .sidebar-link {
+    width: auto;
+    min-width: max-content;
+    padding: 0 13px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+}

@@ -1,0 +1,141 @@
+.backup-page {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.backup-card {
+  padding: 26px;
+  background: #ffffff;
+  border: 1px solid #e8e3dc;
+  border-radius: 16px;
+}
+
+.backup-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.backup-label {
+  color: #8b7355;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.backup-card h2 {
+  margin: 7px 0 0;
+  color: #302a24;
+  font-size: 20px;
+}
+
+.backup-card p {
+  color: #716a62;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.backup-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: #f3eee7;
+  color: #80694d;
+  font-size: 25px;
+}
+
+.backup-card label {
+  display: block;
+  margin: 20px 0 8px;
+  color: #403a33;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.backup-card input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ded8d0;
+  border-radius: 9px;
+  background: #fff;
+  color: #302a24;
+  font: inherit;
+}
+
+.backup-card input:focus {
+  outline: 2px solid #b69b78;
+  outline-offset: 2px;
+}
+
+.backup-card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #574735;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.backup-card button:hover:not(:disabled) {
+  background: #403426;
+}
+
+.backup-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.backup-selected-file {
+  overflow-wrap: anywhere;
+}
+
+.backup-message,
+.backup-warning {
+  grid-column: 1 / -1;
+  padding: 18px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.backup-success {
+  background: #edf5ed;
+  color: #285c32;
+  border: 1px solid #cfe3d0;
+}
+
+.backup-error {
+  background: #fbefed;
+  color: #8a3028;
+  border: 1px solid #edcfca;
+}
+
+.backup-warning {
+  background: #f5f1eb;
+  color: #5f5140;
+  border: 1px solid #e6ddd1;
+}
+
+.backup-warning h3 {
+  margin-top: 0;
+}
+
+.backup-warning ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+  .backup-page {
+    grid-template-columns: 1fr;
+  }
+}

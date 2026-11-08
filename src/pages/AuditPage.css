@@ -1,0 +1,283 @@
+
+.audit-page {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.audit-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  background: #fffaf2;
+  border: 1px solid #e9dfd0;
+  border-radius: 16px;
+}
+
+.audit-label {
+  color: #96724c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.audit-summary h2 {
+  margin: 9px 0;
+  color: #493827;
+}
+
+.audit-summary p {
+  margin: 0;
+  color: #786b5d;
+  line-height: 1.6;
+}
+
+.audit-total {
+  min-width: 145px;
+  padding: 18px;
+  text-align: center;
+  background: #f1e6d7;
+  border-radius: 12px;
+}
+
+.audit-total strong {
+  display: block;
+  color: #654a30;
+  font-size: 30px;
+}
+
+.audit-total span {
+  color: #786b5d;
+  font-size: 12px;
+}
+
+.audit-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  align-items: end;
+  gap: 12px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9dfd0;
+  border-radius: 14px;
+}
+
+.audit-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.audit-filter label {
+  color: #594735;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.audit-filter input,
+.audit-filter select {
+  width: 100%;
+  min-width: 0;
+  padding: 11px;
+  color: #493827;
+  background: #fffdf9;
+  border: 1px solid #ded2c2;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.audit-clear-button {
+  padding: 11px 14px;
+  color: #654a30;
+  background: #f1e6d7;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.audit-clear-button:hover {
+  background: #e8d8c4;
+}
+
+.audit-status,
+.audit-empty {
+  padding: 28px;
+  color: #786b5d;
+  text-align: center;
+  background: white;
+  border: 1px solid #e9dfd0;
+  border-radius: 14px;
+}
+
+.audit-empty h3 {
+  margin-top: 0;
+  color: #493827;
+}
+
+.audit-error {
+  padding: 18px;
+  color: #963c32;
+  background: #fff0ed;
+  border: 1px solid #e8c2bb;
+  border-radius: 10px;
+}
+
+.audit-error button {
+  margin-left: 12px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+
+.audit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.audit-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audit-list-heading h3 {
+  margin: 0;
+  color: #493827;
+}
+
+.audit-list-heading span {
+  color: #786b5d;
+  font-size: 13px;
+}
+
+.audit-item {
+  padding: 19px;
+  background: white;
+  border: 1px solid #e9dfd0;
+  border-radius: 12px;
+}
+
+.audit-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.audit-item-top time {
+  color: #897c6e;
+  font-size: 12px;
+}
+
+.audit-item-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.audit-tag {
+  padding: 5px 9px;
+  color: #654a30;
+  background: #f1e6d7;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.audit-create {
+  color: #326b49;
+  background: #e8f4eb;
+}
+
+.audit-update {
+  color: #8a6428;
+  background: #fff3d9;
+}
+
+.audit-delete {
+  color: #963c32;
+  background: #fff0ed;
+}
+
+.audit-import {
+  color: #4d5d8b;
+  background: #edf0fa;
+}
+
+.audit-description {
+  margin: 15px 0 7px;
+  color: #493827;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.audit-id {
+  margin: 0;
+  color: #93877a;
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+
+.audit-details {
+  margin-top: 15px;
+  border-top: 1px solid #eee6dc;
+  padding-top: 12px;
+}
+
+.audit-details summary {
+  color: #795a3a;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.audit-detail-block {
+  margin-top: 14px;
+}
+
+.audit-detail-block h4 {
+  margin: 0 0 8px;
+  color: #594735;
+}
+
+.audit-detail-block pre {
+  max-height: 320px;
+  overflow: auto;
+  padding: 14px;
+  color: #493827;
+  background: #f8f5ef;
+  border: 1px solid #e9dfd0;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1050px) {
+  .audit-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .audit-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .audit-total {
+    width: 100%;
+  }
+
+  .audit-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-item-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
